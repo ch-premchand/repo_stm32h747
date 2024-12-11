@@ -80,7 +80,7 @@ void TIM7_Init(void){
     HTim7.Instance = TIM7;  // Set the TIM7 instance
     HTim7.Init.Prescaler = 24;  // Set prescaler to 24 (clock division factor)
     HTim7.Init.Period = 64000 - 1;  // Set period to 64000-1 (timer overflow count)
-
+    //100ms
     // Initialize Timer 7 with the specified configuration
     if(HAL_TIM_Base_Init(&HTim7) != HAL_OK){
         Error_Handler();  // If initialization fails, enter error handling
